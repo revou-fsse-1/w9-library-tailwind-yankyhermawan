@@ -31,9 +31,15 @@ function searchLibrary(e) {
 								(console.log(e),
 								e.filter(
 									(e) =>
-										e.title.toLowerCase().includes(t) ||
-										e.authors.join(", ").toLowerCase().includes(t) ||
-										e.subjects.join(", ").toLowerCase().includes(t)
+										e.title.toLowerCase().includes(t.toLowerCase()) ||
+										e.authors
+											.join(", ")
+											.toLowerCase()
+											.includes(t.toLowerCase()) ||
+										e.subjects
+											.join(", ")
+											.toLowerCase()
+											.includes(t.toLowerCase())
 								));
 						0 < e.length
 							? (e.forEach((e) => {
@@ -76,8 +82,7 @@ function searchLibrary(e) {
 										m.appendChild(o);
 							  }),
 							  d.appendChild(m))
-							: (
-							  ((o = document.createElement("h1")).className =
+							: (((o = document.createElement("h1")).className =
 									"text-gray-400"),
 							  (o.innerHTML =
 									"No books found, please try with another keyword"),

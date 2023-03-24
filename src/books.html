@@ -17,13 +17,13 @@
 			rel="apple-touch-icon"
 		/>
 
-		<link href="../dist/output.css" rel="stylesheet" />
+		<link href="./output.css" rel="stylesheet" />
 	</head>
 	<body onload="loadBooks()">
-		<div class="flex flex-col h-screen">
+		<div class="flex h-screen flex-col">
 			<header>
 				<nav class="bg-gray-800">
-					<div class="mx-auto max-w-7xl sm:px-6 lg:px-8 px-2">
+					<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 						<div class="relative flex h-16 items-center justify-between">
 							<div
 								class="absolute inset-y-0 left-0 flex items-center sm:hidden"
@@ -85,21 +85,21 @@
 								<div class="hidden sm:ml-6 sm:block">
 									<div class="flex space-x-4">
 										<a
-											href="index.html"
-											class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+											href="./"
+											class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
 											aria-current="page"
 											>Library</a
 										>
 
 										<a
-											href="books.html"
-											class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+											href="./books"
+											class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
 											>Books</a
 										>
 
 										<a
-											href="information.html"
-											class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+											href="./information"
+											class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
 											>Information</a
 										>
 									</div>
@@ -108,24 +108,24 @@
 						</div>
 					</div>
 
-					<div class="sm:hidden hidden" id="m-menu">
+					<div class="hidden sm:hidden" id="m-menu">
 						<div class="space-y-1 px-2 pt-2 pb-3">
 							<a
-								href="index.html"
-								class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+								href="./index"
+								class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
 								aria-current="page"
 								>Library</a
 							>
 
 							<a
-								href="books.html"
-								class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+								href="./books"
+								class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
 								>Books</a
 							>
 
 							<a
-								href="information.html"
-								class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+								href="./information"
+								class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
 								>Information</a
 							>
 						</div>
@@ -137,7 +137,7 @@
 			>
 				<div class="flex flex-col items-center py-3 px-4 sm:px-8">
 					<div
-						class="container mx-auto my-3 max-w-screen-xl sm:px-6 lg:px-8 bg-gray-800 rounded-lg py-8"
+						class="container mx-auto my-3 max-w-screen-xl rounded-lg bg-gray-800 py-8 sm:px-6 lg:px-8"
 					>
 						<div class="text-center">
 							<nav aria-label="Page navigation example">
@@ -145,7 +145,7 @@
 									<li>
 										<a
 											href="#"
-											class="px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+											class="ml-0 rounded-l-lg border border-gray-300 bg-white px-3 py-2 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
 											onclick="previousBooksPage()"
 											>Previous</a
 										>
@@ -153,21 +153,21 @@
 									<li>
 										<a
 											href="?page=1"
-											class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+											class="border border-gray-300 bg-white px-3 py-2 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
 											>1</a
 										>
 									</li>
 									<li>
 										<a
 											href="?page=2"
-											class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+											class="border border-gray-300 bg-white px-3 py-2 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
 											>2</a
 										>
 									</li>
 									<li>
 										<a
 											href="#"
-											class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+											class="rounded-r-lg border border-gray-300 bg-white px-3 py-2 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
 											onclick="nextBooksPage()"
 											>Next</a
 										>
@@ -177,14 +177,14 @@
 						</div>
 						<div
 							id="book-grid"
-							class="my-6 grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-3 gap-4 px-4 sm:px-0"
+							class="my-6 grid grid-cols-1 gap-4 px-4 sm:grid-cols-3 sm:px-0 lg:grid-cols-4"
 						>
 							<div
-								class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+								class="w-full rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800"
 							>
 								<a href="#">
 									<img
-										class="h-72 mx-auto"
+										class="mx-auto h-72"
 										src="https://covers.openlibrary.org/b/id/10587033-L.jpg"
 										alt="The Lord of the Rings: The Fellowship of the Ring"
 									/>
@@ -203,11 +203,11 @@
 								</div>
 							</div>
 							<div
-								class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+								class="w-full rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800"
 							>
 								<a href="#">
 									<img
-										class="h-72 mx-auto"
+										class="mx-auto h-72"
 										src="https://covers.openlibrary.org/b/id/13179392-L.jpg"
 										alt="The Lord of the Rings: The Return of the Kings"
 									/>
@@ -226,11 +226,11 @@
 								</div>
 							</div>
 							<div
-								class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+								class="w-full rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800"
 							>
 								<a href="#">
 									<img
-										class="h-72 mx-auto"
+										class="mx-auto h-72"
 										src="https://covers.openlibrary.org/b/id/10290014-L.jpg"
 										alt="Lord of the Rings: The Two Towers v. 2"
 									/>
@@ -255,7 +255,7 @@
 									<li>
 										<a
 											href="#"
-											class="px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+											class="ml-0 rounded-l-lg border border-gray-300 bg-white px-3 py-2 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
 											onclick="previousBooksPage()"
 											>Previous</a
 										>
@@ -263,21 +263,21 @@
 									<li>
 										<a
 											href="?page=1"
-											class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+											class="border border-gray-300 bg-white px-3 py-2 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
 											>1</a
 										>
 									</li>
 									<li>
 										<a
 											href="?page=2"
-											class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+											class="border border-gray-300 bg-white px-3 py-2 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
 											>2</a
 										>
 									</li>
 									<li>
 										<a
 											href="#"
-											class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+											class="rounded-r-lg border border-gray-300 bg-white px-3 py-2 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
 											onclick="nextBooksPage()"
 											>Next</a
 										>
@@ -288,13 +288,13 @@
 					</div>
 				</div>
 			</main>
-			<footer class="py-3 bg-gray-800">
+			<footer class="bg-gray-800 py-3">
 				<p class="text-center text-xs leading-relaxed text-gray-300">
 					RevoU Library
 				</p>
 			</footer>
 		</div>
 
-		<script src="app.js"></script>
+		<script src="./app.js"></script>
 	</body>
 </html>
