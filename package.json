@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "prettier-plugin-tailwindcss": "^0.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "tailwind": "^4.0.0"
+  },
+  "name": "w9",
+  "version": "1.0.0",
+  "main": "./src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
